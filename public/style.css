@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #3498db;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+main {
+  padding: 1rem;
+}
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #2ecc71;
+  border-radius: 8px;
+}
+input, select, button {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+}
+button {
+  background: #2ecc71;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #28b463;
+}
+.hidden {
+  display: none;
+}
+#chat {
+  border: 1px solid #3498db;
+  padding: 1rem;
+  border-radius: 8px;
+}
+#mensagens {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+#mensagens div {
+  margin-bottom: 0.5rem;
+}
