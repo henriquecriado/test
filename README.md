@@ -1,6 +1,6 @@
 # VitaBalance API
 
-Protótipo de backend em Node.js/Express para a plataforma de saúde e bem-estar.
+Protótipo de backend em Node.js/Express com frontend estático para a plataforma de saúde e bem-estar.
 
 ## Como executar
 
@@ -12,6 +12,9 @@ Protótipo de backend em Node.js/Express para a plataforma de saúde e bem-estar
    ```bash
    node server.js
    ```
+
+3. Acesse o frontend:
+   Abra `http://localhost:3000` no navegador para usar a interface web.
 
 O servidor será iniciado na porta `3000`.
 

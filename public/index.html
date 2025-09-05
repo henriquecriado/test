@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VitaBalance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>VitaBalance</h1>
+  </header>
+  <main>
+    <section id="onboarding">
+      <h2>Onboarding</h2>
+      <form id="onboarding-form">
+        <input type="text" id="nome" placeholder="Nome" required />
+        <input type="number" id="idade" placeholder="Idade" required />
+        <select id="genero" required>
+          <option value="">Gênero</option>
+          <option value="M">Masculino</option>
+          <option value="F">Feminino</option>
+        </select>
+        <input type="number" id="altura" step="0.01" placeholder="Altura (m)" required />
+        <input type="number" id="peso" step="0.1" placeholder="Peso (kg)" required />
+        <select id="nivel" required>
+          <option value="">Nível de Atividade</option>
+          <option>Sedentário</option>
+          <option>Leve</option>
+          <option>Moderado</option>
+          <option>Intenso</option>
+        </select>
+        <button type="submit">Cadastrar</button>
+      </form>
+      <div id="plano"></div>
+    </section>
+
+    <section id="logs" class="hidden">
+      <h2>Registrar Progresso</h2>
+      <form id="log-form">
+        <input type="number" id="peso-log" step="0.1" placeholder="Peso (kg)" required />
+        <input type="number" id="agua-log" step="0.1" placeholder="Água (L)" required />
+        <input type="text" id="atividade-log" placeholder="Atividade" required />
+        <button type="submit">Registrar</button>
+      </form>
+    </section>
+
+    <section id="dashboard" class="hidden">
+      <h2>Dashboard</h2>
+      <button id="ver-dashboard">Ver Logs</button>
+      <ul id="lista-logs"></ul>
+    </section>
+
+    <section id="marketplace" class="hidden">
+      <h2>Marketplace</h2>
+      <button id="carregar-produtos">Carregar Produtos</button>
+      <ul id="produtos"></ul>
+    </section>
+
+    <section id="assistant" class="hidden">
+      <h2>Assistente</h2>
+      <div id="chat">
+        <div id="mensagens"></div>
+        <form id="chat-form">
+          <input type="text" id="mensagem" placeholder="Digite sua pergunta" required />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
